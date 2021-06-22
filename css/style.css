@@ -1,0 +1,102 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*  { box-sizing: border-box; }
+    
+:root{
+  --primary-color:     #006838;
+  --secondary-color:   #8BC53F;
+  --light-color :      #F4F7F6;
+  --dark-color:        #838689;
+  --extra-light:       #ccc8c4;
+
+  --base-color:        #ffffff;
+  --black_color:       #000000;
+  --gray-color:        #999999;
+  --offwhite       :   #f6f6f6;
+  --section_bg:        #f4f4f4;
+  --border_color:      #edeff2;
+  --title-color    :   #2a2a2a;
+
+  --font_1 : 'Montserrat', sans-serif;   /* //Heading */
+}
+
+body{
+	margin:0;
+	padding: 0;
+	color: var(--dark-color);
+	font-size: 1rem;
+	font-family: var(--font_1);
+}
+
+.container { padding: 60px 0; width: 80%; margin:0 auto; }
+
+.testimonial { text-align: center; }
+
+h1 { 
+  text-align: center; 
+  margin: 0 0 20px 0; 
+  color: var(--primary-color); 
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+svg {
+  height: 24px;
+  width: 24px;
+  fill: var(--secondary-color);
+}
+
+svg:not(:last-child) {
+  margin-right: 4px;
+}
+
+/* Dispaly Rating only on Center Testimonial */
+.rating{
+  opacity: 0;
+  margin-bottom: 34px;
+}
+
+.center .rating {
+  opacity: 1;
+}
+
+.pt-testimonial-sec-user {
+  height: 140px;
+  width: 140px;
+  display: inline-block;
+}
+
+.pt-testimonial-sec-user > img {
+  height: inherit;
+  width: inherit;
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 1px solid var(--secondary-color);
+  object-fit: cover;
+  padding: 4px;
+}
+
+.pt-testimonial-description {
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+h2 { 
+  text-align: center; 
+  color: var(--primary-color); 
+  font-weight: 500; 
+  font-size: 1.1rem;
+}
+
+h2::before {
+  content: '';
+  display: block;
+  border-top: 3px solid var(--secondary-color);
+  width: 30px;
+  margin: 0 auto;
+  border-radius: 2px;
+  padding: 6px 0;
+}
